@@ -1,13 +1,13 @@
 //
-//  ProfileAppUITests.swift
-//  ProfileAppUITests
+//  PhoneContactUITests.swift
+//  PhoneContactUITests
 //
-//  Created by Khai Truong on 9/25/24.
+//  Created by Khai Truong on 10/1/24.
 //
 
 import XCTest
 
-final class ProfileAppUITests: XCTestCase {
+final class PhoneContactUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

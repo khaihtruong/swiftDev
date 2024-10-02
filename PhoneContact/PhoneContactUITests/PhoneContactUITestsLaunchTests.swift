@@ -1,13 +1,13 @@
 //
-//  ProfileAppUITestsLaunchTests.swift
-//  ProfileAppUITests
+//  PhoneContactUITestsLaunchTests.swift
+//  PhoneContactUITests
 //
-//  Created by Khai Truong on 9/25/24.
+//  Created by Khai Truong on 10/1/24.
 //
 
 import XCTest
 
-final class ProfileAppUITestsLaunchTests: XCTestCase {
+final class PhoneContactUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
