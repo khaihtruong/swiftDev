@@ -1,8 +1,8 @@
 //
 //  FirstScreenContactCell.swift
-//  PhoneContact
+//  ContactApp
 //
-//  Created by Khai Truong on 10/1/24.
+//  Created by Khai Truong on 10/3/24.
 //
 
 import UIKit
