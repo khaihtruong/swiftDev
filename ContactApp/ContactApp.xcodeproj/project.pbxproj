@@ -74,21 +74,53 @@
 			children = (
 				45B2D5C62CAF738D00892D44 /* AppDelegate.swift */,
 				45B2D5C82CAF738D00892D44 /* SceneDelegate.swift */,
-				45B2D5CA2CAF738D00892D44 /* ViewController.swift */,
-				45B2D5E62CAF8E3100892D44 /* DetailViewController.swift */,
-				45B2D5E82CAF8E4700892D44 /* DetailView.swift */,
-				45B2D5DC2CAF73F600892D44 /* Contact.swift */,
-				45B2D5DE2CAF742100892D44 /* FirstScreenContactCell.swift */,
-				45B2D5DA2CAF73CF00892D44 /* FirstScreenView.swift */,
+				45B2D5EB2CB2EE2B00892D44 /* First Screen */,
+				45B2D5ED2CB2EE4D00892D44 /* Detail Screen */,
+				45B2D5EC2CB2EE3E00892D44 /* Data Models */,
 				45B2D5E02CAF747200892D44 /* Utilities.swift */,
-				45B2D5E22CAF749300892D44 /* AddContactView.swift */,
-				45B2D5E42CAF74AB00892D44 /* AddContactViewController.swift */,
+				45B2D5EA2CB2EE0000892D44 /* Add Contact Screen */,
 				45B2D5CC2CAF738D00892D44 /* Main.storyboard */,
 				45B2D5CF2CAF738E00892D44 /* Assets.xcassets */,
 				45B2D5D12CAF738E00892D44 /* LaunchScreen.storyboard */,
 				45B2D5D42CAF738E00892D44 /* Info.plist */,
 			);
 			path = ContactApp;
+			sourceTree = "<group>";
+		};
+		45B2D5EA2CB2EE0000892D44 /* Add Contact Screen */ = {
+			isa = PBXGroup;
+			children = (
+				45B2D5E22CAF749300892D44 /* AddContactView.swift */,
+				45B2D5E42CAF74AB00892D44 /* AddContactViewController.swift */,
+			);
+			path = "Add Contact Screen";
+			sourceTree = "<group>";
+		};
+		45B2D5EB2CB2EE2B00892D44 /* First Screen */ = {
+			isa = PBXGroup;
+			children = (
+				45B2D5CA2CAF738D00892D44 /* ViewController.swift */,
+				45B2D5DE2CAF742100892D44 /* FirstScreenContactCell.swift */,
+				45B2D5DA2CAF73CF00892D44 /* FirstScreenView.swift */,
+			);
+			path = "First Screen";
+			sourceTree = "<group>";
+		};
+		45B2D5EC2CB2EE3E00892D44 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				45B2D5DC2CAF73F600892D44 /* Contact.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		45B2D5ED2CB2EE4D00892D44 /* Detail Screen */ = {
+			isa = PBXGroup;
+			children = (
+				45B2D5E62CAF8E3100892D44 /* DetailViewController.swift */,
+				45B2D5E82CAF8E4700892D44 /* DetailView.swift */,
+			);
+			path = "Detail Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

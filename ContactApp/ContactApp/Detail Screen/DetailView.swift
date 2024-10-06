@@ -19,7 +19,11 @@ class DetailView: UIView {
     var name: UILabel!
     var email: UILabel!
     var phone: UILabel!
+    
+    var addressStart:UILabel!
     var address:UILabel!
+    var city: UILabel!
+    var zip: UILabel!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,6 +35,9 @@ class DetailView: UIView {
         setupEmail()
         setupPhone()
         setupAddress()
+        setupAddressStart()
+        setupCity()
+        setupZip()
         
         initConstraints()
     }
@@ -38,6 +45,7 @@ class DetailView: UIView {
     func setupName(){
         name = UILabel()
         name.textColor = .black
+        name.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         name.textAlignment = .center
         name.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(name)
@@ -59,6 +67,16 @@ class DetailView: UIView {
         self.addSubview(phone)
     }
     
+    func setupAddressStart() {
+        addressStart = UILabel()
+        addressStart.textColor = .black
+        addressStart.text = "Address: "
+        addressStart.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+        addressStart.textAlignment = .center
+        addressStart.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(addressStart)
+    }
+    
     func setupAddress() {
         address = UILabel()
         address.textColor = .black
@@ -67,13 +85,29 @@ class DetailView: UIView {
         self.addSubview(address)
     }
     
+    func setupCity() {
+        city = UILabel()
+        city.textColor = .black
+        city.textAlignment = .center
+        city.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(city)
+    }
+    
+    func setupZip() {
+        zip = UILabel()
+        zip.textColor = .black
+        zip.textAlignment = .center
+        zip.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(zip)
+    }
+    
     func initConstraints(){
         NSLayoutConstraint.activate([
             name.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 32),
             name.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
             name.leadingAnchor.constraint(equalTo:self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
             
-            email.topAnchor.constraint(equalTo: name.bottomAnchor, constant: 16),
+            email.topAnchor.constraint(equalTo: name.bottomAnchor, constant: 22),
             email.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
             email.leadingAnchor.constraint(equalTo:self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
             
@@ -81,9 +115,21 @@ class DetailView: UIView {
             phone.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
             phone.leadingAnchor.constraint(equalTo:self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
             
-            address.topAnchor.constraint(equalTo: phone.bottomAnchor, constant: 16),
+            addressStart.topAnchor.constraint(equalTo: phone.bottomAnchor, constant: 32),
+            addressStart.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
+            addressStart.leadingAnchor.constraint(equalTo:self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+            
+            address.topAnchor.constraint(equalTo: addressStart.bottomAnchor, constant: 16),
             address.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
             address.leadingAnchor.constraint(equalTo:self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+            
+            city.topAnchor.constraint(equalTo: address.bottomAnchor, constant: 16),
+            city.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
+            city.leadingAnchor.constraint(equalTo:self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+            
+            zip.topAnchor.constraint(equalTo: city.bottomAnchor, constant: 16),
+            zip.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
+            zip.leadingAnchor.constraint(equalTo:self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
         ])
     }
     

@@ -26,11 +26,15 @@ class FirstScreenContactCell: UITableViewCell {
     func setupWrapperCellView() {
         wrapperCellView = UITableViewCell()
         wrapperCellView.translatesAutoresizingMaskIntoConstraints = false
+        wrapperCellView.layer.borderColor = UIColor.gray.cgColor
+        wrapperCellView.layer.borderWidth = 1
+        wrapperCellView.layer.cornerRadius = 10
         self.addSubview(wrapperCellView)
     }
     
     func setupName() {
         name = UILabel()
+        name.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         name.translatesAutoresizingMaskIntoConstraints = false
         wrapperCellView.addSubview(name)
     }
@@ -49,7 +53,7 @@ class FirstScreenContactCell: UITableViewCell {
     
     func initConstraints(){
             NSLayoutConstraint.activate([
-                wrapperCellView.topAnchor.constraint(equalTo: self.topAnchor),
+                wrapperCellView.topAnchor.constraint(equalTo: self.topAnchor, constant: 2),
                 wrapperCellView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
                 wrapperCellView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
                 wrapperCellView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
