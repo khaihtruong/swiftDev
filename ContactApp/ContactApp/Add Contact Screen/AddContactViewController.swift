@@ -135,14 +135,14 @@ extension AddContactViewController: UIPickerViewDelegate, UIPickerViewDataSource
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         //MARK: we are displaying the options from Utilities.types...
-        return types.count
+        return Utilities.types.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         //MARK: updating the selected type when the user picks this row...
-        selected = types[row]
-        return types[row]
+        selected = Utilities.types[row]
+        return Utilities.types[row]
     }
 }
 
