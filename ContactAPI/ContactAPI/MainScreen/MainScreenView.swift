@@ -81,6 +81,7 @@ class MainScreenView: UIView {
     
     func setupButtonAdd(){
         buttonAdd = UIButton(type: .system)
+        buttonAdd.setImage(UIImage(systemName: "house"), for: .normal)
         buttonAdd.titleLabel?.font = .boldSystemFont(ofSize: 16)
         buttonAdd.setTitle("Add Contact", for: .normal)
         buttonAdd.translatesAutoresizingMaskIntoConstraints = false
