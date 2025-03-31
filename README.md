@@ -1,1 +1,1 @@
-Small project works for CS5520 (Swift)
+Small project works for in Swift
